@@ -1,0 +1,79 @@
+//设置margin居中
+@mixin m-auto($a:0,$c:0,$b:auto){
+	margin:{
+		top:$a;
+		bottom:$c;
+		left:$b;
+		right:$b;
+	}
+}
+
+//设置边框，两种方式：
+//@include solid(1px,red,0,solid);
+//@include solid(1px,red,left,solid);
+@mixin solid($px:1px,$color:#808080,$p:'0',$s:solid){
+	@if $p=='0'{
+		border-width:$px;
+		border-style:$s;
+		border-color:$color;
+	}@else{
+		border-#{$p}-width:$px;
+		border-#{$p}-style:$s;
+		border-#{$p}-color:$color;
+	}
+	@content;
+}
+
+//设置背景图
+@mixin bg($url,$size:cover,$position:50% 50%){
+	background: url($url) no-repeat;
+	background-size: $size;
+	background-position: $position;
+}
+
+//设置flex布局，默认水平垂直居中
+@mixin flex($justify:center,$align:center){
+	display:flex;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+	-webkit-box-align: $align;
+    -ms-flex-align: $align;
+    -webkit-align-items: $align;
+    -moz-align-items: $align;
+    align-items: $align;
+    justify-content: $justify;
+	@content;
+}
+
+//设置边界半径
+@mixin border-radius($radius){
+  -webkit-border-radius:$radius;
+  -moz-border-radius:$radius;
+  border-radius:$radius;
+}
+
+//设置过渡动画
+@mixin transform($transform){
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+//设置文字选择，默认不可选
+@mixin user-select($param:none){
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+//设置盒子阴影
+@mixin box-shadow($param:none){
+  -webkit-box-shadow: $param;
+  -moz-box-shadow: $param;
+  box-shadow: $param;
+}

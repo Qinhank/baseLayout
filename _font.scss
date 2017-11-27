@@ -1,0 +1,68 @@
+%defaultFontStyle{
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*******设定思源字体 -r为regular -b为bold*******/
+$siyuan-r: 'ub8ba4jbjxidlsor';
+@font-face{
+  font-family: 'siyuan-r';
+  src: url('//at.alicdn.com/t/webfont_#{$siyuan-r}.eot');
+  src: url('//at.alicdn.com/t/webfont_#{$siyuan-r}.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/webfont_#{$siyuan-r}.woff') format('woff'),
+  url('//at.alicdn.com/t/webfont_#{$siyuan-r}.ttf') format('truetype'),
+  url('//at.alicdn.com/t/webfont_#{$siyuan-r}.svg#NotoSansHans-DemiLight') format('svg');
+}
+%r-siyuan{
+  font-family: 'siyuan-r';
+  @extend %defaultFontStyle;
+}
+
+$siyuan-b: 'ub8ba4jbjxidlsor';
+@font-face{
+  font-family: 'siyuan-b';
+  src: url('//at.alicdn.com/t/webfont_#{$siyuan-b}.eot');
+  src: url('//at.alicdn.com/t/webfont_#{$siyuan-b}.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/webfont_#{$siyuan-b}.woff') format('woff'),
+  url('//at.alicdn.com/t/webfont_#{$siyuan-b}.ttf') format('truetype'),
+  url('//at.alicdn.com/t/webfont_#{$siyuan-b}.svg#NotoSansHans-DemiLight') format('svg');
+}
+%b-siyuan{font-family: 'siyuan-b';@extend %defaultFontStyle;}
+
+/*******设定DTLNOBEL英文字体********/
+@font-face{
+	font-family: 'dtl';
+	src: url('/assets/images/DTLNOBEL-T-BOLD.eot'); /*IE9*/
+	src: url('/assets/images/DTLNOBEL-T-BOLD.eot?#iefix'); /*IE9*/
+	src:url('/assets/images/DTLNOBEL-T-BOLD.woff') format('woff'), /*chrome、firefox*/
+	url('/assets/images/DTLNOBEL-T-BOLD.ttf') format('truetype'), /*chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('/assets/images/DTLNOBEL-T-BOLD.svg') format('svg'); /*iOS 4.1- */
+}
+%dtl{font-family: 'dtl';@extend %defaultFontStyle;}
+
+/******设定微软雅黑 -r为常规，-b为加粗******/
+$yahei-r: 'ub8ba4jbjxidlsor';
+@font-face{
+  font-family: 'yahei-r';
+  src: url('//at.alicdn.com/t/webfont_#{$yahei-r}.eot');
+  src: url('//at.alicdn.com/t/webfont_#{$yahei-r}.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/webfont_#{$yahei-r}.woff') format('woff'),
+  url('//at.alicdn.com/t/webfont_#{$yahei-r}.ttf') format('truetype'),
+  url('//at.alicdn.com/t/webfont_#{$yahei-r}.svg#NotoSansHans-DemiLight') format('svg');
+}
+%r-yahei{font-family: 'yahei-r';@extend %defaultFontStyle;}
+
+$yahei-b: 'ub8ba4jbjxidlsor';
+@font-face{
+  font-family: 'yahei-b';
+  src: url('//at.alicdn.com/t/webfont_#{$yahei-b}.eot');
+  src: url('//at.alicdn.com/t/webfont_#{$yahei-b}.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/webfont_#{$yahei-b}.woff') format('woff'),
+  url('//at.alicdn.com/t/webfont_#{$yahei-b}.ttf') format('truetype'),
+  url('//at.alicdn.com/t/webfont_#{$yahei-b}.svg#NotoSansHans-DemiLight') format('svg');
+}
+%b-yahei{font-family: 'yahei-b';@extend %defaultFontStyle;}
+
+/*fontClass*/
+@import "//at.alicdn.com/t/font_394873_ywfdug464g8n0zfr.css";
