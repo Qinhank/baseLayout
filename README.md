@@ -23,8 +23,9 @@
 
 
 保留字详细：  
+
 | 名称 | 方法 | 
-| - | :-: |
+| ---- | ---- |
 | .clearfix | 清除float浮动 |
 | .hidden | ```display:none``` |
 | .text-left| ```text-align:left``` |
@@ -34,6 +35,7 @@
 | .text-red | ```color:#dc1c24``` |
 | .text-gray| ```color:#808080``` |
 | .list-unstyled | ```list-style:none;margin:0;padding-left:0``` |
+
 ### bootstrap
 - 负责网格系统
 - 优化默认的Table、Forms、Buttons标签
@@ -45,7 +47,7 @@
 
 方法：  
 | 方法 | 用法 | 参数 |  
-| - | :-: | -: |
+| ---- | ---- | ---- |
 | m-auto() |设置元素```margin```值 | ```$top:0,```<br>```$bottom:0,```<br>```$leftRight:0``` |
 | solid() | 设置边框，可设置全边框也可设置单边框,```$p```为0时为全边框，为left、right、top、bottom时对应相应边框| ```$px:1px,```<br>```$color:#808080,```<br>```$p:0,```<br>```$s:solid```|
 | bg() | 设置背景图，一般先定义一个共用文件夹路径，调用url时可直接```$url:'{$path}image.jpg'```| $url:null<br>$size:cover<br>$position:50% 50%|
