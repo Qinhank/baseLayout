@@ -1,11 +1,21 @@
 @import "mixin","font";
 // 基础布局
-body{
-	margin:0;
-	padding:0;
-	font-size:14px;
-	font-family: "Microsoft YaHei","微软雅黑";
-	-webkit-overflow-scrolling: touch;
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption, {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    color: #333;
+    font-weight: normal;
+    font-family: "Microsoft Yahei";
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:hover{
+        outline: none;
+    }
 }
 
 /*基础布局*/
